@@ -8,22 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+    
 </head>
 <body>
-    <header>
+    <header >
         <!-- navbar section -->
-        <div class="navbar bg-[#F85559] rounded-full">
+        <div class="navbar bg-[#F85559] rounded-full grid-cols-1">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -37,45 +27,170 @@
                 </ul>
               </div>
             </div>
-            <div class="navbar-center">
+            <div class="navbar-center md:flex-col-reverse md:w-1/2">
               <img src="images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+              <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
             </div>
             <div class="form-control navbar-end ">
-              <a>
+              
                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3965 3.78947 12.4887 2.99927 10.4995 2.99927C8.51035 2.99927 6.60262 3.78947 5.19605 5.19605C3.78947 6.60262 2.99927 8.51035 2.99927 10.4995C2.99927 12.4887 3.78947 14.3965 5.19605 15.803C6.60262 17.2096 8.51035 17.9998 10.4995 17.9998C12.4887 17.9998 14.3965 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>      
-              </a>
+               
       
-    </div>
+             </div>
             </div>
           </div>
 
     </header>
     <main>
-      <section class="mt-28 mb-20 ml-10 mr-10"> 
+      <section class="mt-28 mb-20 ml-10 mr-10 grid-cols-1"> 
       <!-- banner section -->
-      
-
-          <div class="hero min-h-screen relative  " style="background-image: url(images/banner1.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            
-          <div class="hero-content text-center text-neutral-content">
-           <div class="max-w-md">
-             <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
-             <p class="mb-5">We supply highly quality organic products</p>
-             <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
-             <div class="flex justify-between">
+       
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="hero min-h-screen relative  " style="background-image: url(images/banner1.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              
+            <div class="hero-content text-center text-neutral-content">
+             <div class="max-w-md">
+               <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
+               <p class="mb-5">We supply highly quality organic products</p>
+               <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+               <div class="flex justify-between">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
-             </div>
-           </div>
-         </div>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>    
+  <div class="flex justify-center -mb-10 absolute bg-white items-center ml-36">
+    <div>
+      <img src="images/fruit1.png" alt="">
+      <p>Grape</p>
+    </div>
+    <div>
+      <img src="images/fruit2.png" alt="">
+      <p>Orange</p>
+    </div>
+    <div>
+      <img src="images/fruit3.png" alt="">
+      <p>Mango</p>
+    </div>
+    <div>
+      <img src="images/fruit4.png" alt="">
+       <p>Strawberry</p>
+    </div>
+    <div>
+      <img src="images/fruit5.png" alt="">
+      <p>Mango</p>
+    </div>
+  </div>    
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero min-h-screen relative  " style="background-image: url(images/banner2.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              
+            <div class="hero-content text-center text-neutral-content">
+             <div class="max-w-md">
+               <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
+               <p class="mb-5">We supply highly quality organic products</p>
+               <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+               <div class="flex justify-between">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center -mb-10 absolute bg-white items-center ml-36">
+    <div>
+      <img src="images/fruit1.png" alt="">
+      <p>Grape</p>
+    </div>
+    <div>
+      <img src="images/fruit2.png" alt="">
+      <p>Orange</p>
+    </div>
+    <div>
+      <img src="images/fruit3.png" alt="">
+      <p>Mango</p>
+    </div>
+    <div>
+      <img src="images/fruit4.png" alt="">
+       <p>Strawberry</p>
+    </div>
+    <div>
+      <img src="images/fruit5.png" alt="">
+      <p>Mango</p>
+    </div>
+  </div>   
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero min-h-screen relative  " style="background-image: url(images/banner3.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              
+            <div class="hero-content text-center text-neutral-content">
+             <div class="max-w-md">
+               <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
+               <p class="mb-5">We supply highly quality organic products</p>
+               <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+               <div class="flex justify-between">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> 
+      </div>
+      <div class="flex justify-center -mb-10 absolute bg-white items-center ml-36">
+        <div>
+          <img src="images/fruit1.png" alt="">
+          <p>Grape</p>
+        </div>
+        <div>
+          <img src="images/fruit2.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div>
+          <img src="images/fruit3.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div>
+          <img src="images/fruit4.png" alt="">
+           <p>Strawberry</p>
+        </div>
+        <div>
+          <img src="images/fruit5.png" alt="">
+          <p>Mango</p>
+        </div>
+      </div>   
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero min-h-screen relative  " style="background-image: url(images/banner4.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              
+            <div class="hero-content text-center text-neutral-content">
+             <div class="max-w-md">
+               <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br>doorstep</h1>
+               <p class="mb-5">We supply highly quality organic products</p>
+               <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+               <div class="flex justify-between">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+        <!-- ggg -->
         
-        <div class="flex justify-center -mt-16 absolute bg-white items-center ml-36">
+        <div class="flex justify-center -mb-10 absolute bg-white items-center ml-36">
           <div>
             <img src="images/fruit1.png" alt="">
             <p>Grape</p>
@@ -100,7 +215,7 @@
 </section>
 
 
-   <section>
+   <section class="grid-cols-1">
     <!-- Meet the team member -->
    
     <div class="hero min-h-screen m-10" style="background-image: url(images/team.png);">
@@ -430,14 +545,42 @@
 
     </section>
 
-    <section>
+<!-- Why Choose Us section-->
+    <section class="m-24">
+      <!-- head part -->
+        <div class="justify-center text-center">
+            <h3 class="text-3xl">Why Choose Us</h3>
+            <p class="text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- body part -->
+        <div>
+          <div>
+             <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z" fill="#121212"/>
+              </svg>
+             </a>
+             <h3 class="">Dedicated Team</h3>
+             <hr>
+             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
 
+          </div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+
+        <div>
+
+        </div>
     </section>
     
     
    </section>
     </main>
-    <footer class="space-y-10">
+    <footer class="space-y-10 grid-cols-1">
         <!-- footer section -->
         <footer class="footer footer-center p-10 bg-black text-base-content rounded text-white">
             <div class="flex">
